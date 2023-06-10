@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="StudyingMaui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:StudyingMaui"
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <HorizontalStackLayout Spacing="20" Padding="25">
+                <Label Text="{Binding Title}"
+                   FontSize="Large"
+                   TextColor="Green"
+                   FontAttributes="Bold" />
+                <Image Source="{Binding FlyoutIcon}"
+                    Aspect="AspectFill"
+                    HeightRequest="20"
+                    WidthRequest="20" 
+                    HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+    
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="ParentRoute">
+        <ShellContent
+            Icon="home.svg"
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Icon="dotnet_bot.png"
+            Title="Home 2"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage2" />
+    
+        <ShellContent
+            Icon="dotnet_bot.png"
+            Title="Home 3"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage3" />
+
+        <ShellContent
+            Icon="settings.svg"
+            Title="Settings"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage4" />
+    </FlyoutItem>
+</Shell>
