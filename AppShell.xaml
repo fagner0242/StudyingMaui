@@ -8,43 +8,45 @@
 
     <Shell.ItemTemplate>
         <DataTemplate>
-            <HorizontalStackLayout Spacing="20" Padding="25">
-                <Label Text="{Binding Title}"
-                   FontSize="Large"
-                   TextColor="Green"
-                   FontAttributes="Bold" />
-                <Image Source="{Binding FlyoutIcon}"
+            <HorizontalStackLayout Padding="25" Spacing="20">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Text="{Binding Title}"
+                    TextColor="Green" />
+                <Image
                     Aspect="AspectFill"
                     HeightRequest="20"
-                    WidthRequest="20" 
-                    HorizontalOptions="End"/>
+                    HorizontalOptions="End"
+                    Source="{Binding FlyoutIcon}"
+                    WidthRequest="20" />
             </HorizontalStackLayout>
         </DataTemplate>
     </Shell.ItemTemplate>
-    
+
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="ParentRoute">
         <ShellContent
-            Icon="home.svg"
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="home.svg"
             Route="MainPage" />
 
         <ShellContent
-            Icon="dotnet_bot.png"
             Title="Home 2"
             ContentTemplate="{DataTemplate local:MainPage}"
-            Route="MainPage2" />
-    
-        <ShellContent
             Icon="dotnet_bot.png"
+            Route="MainPage2" />
+
+        <ShellContent
             Title="Home 3"
             ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="dotnet_bot.png"
             Route="MainPage3" />
 
         <ShellContent
-            Icon="settings.svg"
             Title="Settings"
             ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="settings.svg"
             Route="MainPage4" />
     </FlyoutItem>
 </Shell>
