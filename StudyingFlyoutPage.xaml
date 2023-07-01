@@ -7,7 +7,7 @@
     Title="StudyingFlyoutPage">
 
     <FlyoutPage.Flyout>
-        <ContentPage Title="Flyout Menu" BackgroundColor="">
+        <ContentPage Title="Flyout Menu" BackgroundColor="#512bd4">
 
             <Label
                 FontSize="Large"
