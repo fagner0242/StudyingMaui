@@ -5,7 +5,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="StudyingTabbedPage">
 
-    <ContentPage BackgroundColor="#41a5ee" IconImageSource="Home">
+    <ContentPage 
+        BackgroundColor="#41a5ee" 
+        IconImageSource="Home">
 
         <Label
             FontSize="Large"
@@ -14,7 +16,10 @@
             VerticalOptions="Center" />
     </ContentPage>
 
-    <ContentPage BackgroundColor="#2b7cd3" IconImageSource="dotnet_bot">
+    <ContentPage 
+        BackgroundColor="#2b7cd3" 
+        IconImageSource="dotnet_bot">
+        
         <Label
             FontSize="Large"
             HorizontalOptions="Center"
@@ -22,7 +27,10 @@
             VerticalOptions="Center" />
     </ContentPage>
 
-    <ContentPage BackgroundColor="#185abd" IconImageSource="dotnet_bot">
+    <ContentPage 
+        BackgroundColor="#185abd" 
+        IconImageSource="dotnet_bot">
+        
         <Label
             FontSize="Large"
             HorizontalOptions="Center"
@@ -30,7 +38,10 @@
             VerticalOptions="Center" />
     </ContentPage>
 
-    <ContentPage BackgroundColor="#113c8a" IconImageSource="settings">
+    <ContentPage 
+        BackgroundColor="#113c8a" 
+        IconImageSource="settings">
+        
         <Label
             FontSize="Large"
             HorizontalOptions="Center"
