@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="StudyingMaui.StudyingTabbedPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StudyingTabbedPage">
+
+    <ContentPage Title="Page 1" BackgroundColor="#41a5ee">
+        <Label
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" />
+    </ContentPage>
+
+    <ContentPage Title="Page 2" BackgroundColor="#2b7cd3">
+        <Label
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="Im studying.NET MAUI!"
+            VerticalOptions="Center" />
+    </ContentPage>
+
+    <ContentPage Title="Page 3" BackgroundColor="#185abd">
+        <Label
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="Estou encantado estudando.NET MAUI!"
+            VerticalOptions="Center" />
+    </ContentPage>
+
+    <ContentPage Title="Page 4" BackgroundColor="#113c8a">
+        <Label
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="I hope to add a lot in the world of software development .NET MAUI!"
+            VerticalOptions="Center" />
+    </ContentPage>
+</TabbedPage>
