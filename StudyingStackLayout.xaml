@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StudyingMaui.StudyingStackLayout"
-             Title="StudyingStackLayout">
+<ContentPage
+    x:Class="StudyingMaui.StudyingStackLayout"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StudyingStackLayout">
 
-    <VerticalStackLayout 
-        Margin="20"
-        Spacing="10" 
-        VerticalOptions="Center" 
-        HorizontalOptions="FillAndExpand">
-        
-        <Label 
-            Text="Log in"
-            Margin="0, 15"
-            FontSize="Large"
-            FontAttributes="Bold"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-
+    <HorizontalStackLayout Margin="0" Spacing="5">
         <Label
-            Text="Email"/>
+            BackgroundColor="Yellow"
+            FontSize="20"
+            Text="Texto 1" />
+        <Label
+            BackgroundColor="Blue"
+            FontSize="20"
+            Text="Texto 2" />
 
-        <Frame Padding="10">
-            <Entry
-                Placeholder="Your addres email"/>
-        </Frame>
 
-        <Button 
-            BackgroundColor="#98b1ea"
-            Text="Continue with email"
-            VerticalOptions="Center" 
-            HorizontalOptions="FillAndExpand"/>
-    </VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label
+                BackgroundColor="Yellow"
+                FontSize="20"
+                Text="Texto 1" />
+            <Label
+                BackgroundColor="Blue"
+                FontSize="20"
+                Text="Text 2" />
+        </VerticalStackLayout>
+    </HorizontalStackLayout>
 </ContentPage>
