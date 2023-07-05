@@ -8,20 +8,47 @@
     <VerticalStackLayout 
         Margin="20">
         
-        <Label
-            Text="Sign in"
-            TextTransform="Uppercase" 
-            FontSize="Large"/>
+        <Frame 
+            BorderColor="Black"
+            Padding="5">
+            
+            <HorizontalStackLayout Spacing="15">
+                <BoxView 
+                   Color="Red"
+                    WidthRequest="40"
+                   />
+                <Label
+                    Text="Red" 
+                    FontSize="18"/>
+            </HorizontalStackLayout>
+        </Frame>
+        <Frame 
+            BorderColor="Black"
+            Padding="5">
 
-        <Entry 
-            Placeholder="Usuário" />
-        
-        <Entry 
-            Placeholder="Senha" />
+            <HorizontalStackLayout Spacing="15">
+                <BoxView 
+                   Color="Yellow"
+                    WidthRequest="40"
+                   />
+                <Label
+                    Text="Yellow" 
+                    FontSize="18"/>
+            </HorizontalStackLayout>
+        </Frame>
+        <Frame 
+            BorderColor="Black"
+            Padding="5">
 
-        <Button
-            Text="Login"
-            TextTransform="Uppercase" 
-            FontSize="Large"/>
+            <HorizontalStackLayout Spacing="15">
+                <BoxView 
+                   Color="Blue"
+                    WidthRequest="40"
+                   />
+                <Label
+                    Text="Blue" 
+                    FontSize="18"/>
+            </HorizontalStackLayout>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
