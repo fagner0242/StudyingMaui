@@ -23,9 +23,7 @@
 
         <Frame Padding="10">
             <Entry
-                Text="Your address email"
-                TextColor="#b1b4b9"
-                IsVisible="False"/>
+                Placeholder="Your addres email"/>
         </Frame>
 
         <Button 
