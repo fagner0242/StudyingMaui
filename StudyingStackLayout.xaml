@@ -5,26 +5,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="StudyingStackLayout">
 
-    <HorizontalStackLayout Margin="0" Spacing="5">
+    <VerticalStackLayout 
+        Margin="20">
+        
         <Label
-            BackgroundColor="Yellow"
-            FontSize="20"
-            Text="Texto 1" />
-        <Label
-            BackgroundColor="Blue"
-            FontSize="20"
-            Text="Texto 2" />
+            Text="Sign in"
+            TextTransform="Uppercase" 
+            FontSize="Large"/>
 
+        <Entry 
+            Placeholder="Usuário" />
+        
+        <Entry 
+            Placeholder="Senha" />
 
-        <VerticalStackLayout>
-            <Label
-                BackgroundColor="Yellow"
-                FontSize="20"
-                Text="Texto 1" />
-            <Label
-                BackgroundColor="Blue"
-                FontSize="20"
-                Text="Text 2" />
-        </VerticalStackLayout>
-    </HorizontalStackLayout>
+        <Button
+            Text="Login"
+            TextTransform="Uppercase" 
+            FontSize="Large"/>
+    </VerticalStackLayout>
 </ContentPage>
