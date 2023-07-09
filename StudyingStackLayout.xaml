@@ -5,50 +5,55 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="StudyingStackLayout">
 
-    <VerticalStackLayout 
-        Margin="20">
+    <VerticalStackLayout VerticalOptions="Center" Spacing="12" Margin="25">
+
+        <Label
+            Text="Log In"
+            FontSize="Large"
+            Margin="0, 25"
+            FontAttributes="Bold"/>
+
+        <Label
+            Text="Email"/>
+
+        <Frame Padding="12">
+            <Label
+                Text="Your email address"
+                TextColor="#adb3b7"/>
+        </Frame>
+
+        <Button
+            BackgroundColor="#98b1ea"
+            Text="Continue with email"/>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 25" Spacing="20">
+            <Entry
+                WidthRequest="140"
+                HeightRequest="19"/>
+            <Label
+                Text="Or"
+                TextColor="#a2a8af"
+                FontAttributes="Bold"/>
+            <Entry
+                WidthRequest="140"
+                HeightRequest="19"/>
+        </HorizontalStackLayout>
+
+        <Frame>
+            <Image
+                />
+        </Frame>
         
-        <Frame 
-            BorderColor="Black"
-            Padding="5">
-            
-            <HorizontalStackLayout Spacing="15">
-                <BoxView 
-                   Color="Red"
-                    WidthRequest="40"
-                   />
-                <Label
-                    Text="Red" 
-                    FontSize="18"/>
-            </HorizontalStackLayout>
+        <Frame Padding="15">
+            <Image
+                HorizontalOptions="Start"
+                WidthRequest="20"
+                Source="google.png"
+                />
         </Frame>
-        <Frame 
-            BorderColor="Black"
-            Padding="5">
+        
+        <Frame>
 
-            <HorizontalStackLayout Spacing="15">
-                <BoxView 
-                   Color="Yellow"
-                    WidthRequest="40"
-                   />
-                <Label
-                    Text="Yellow" 
-                    FontSize="18"/>
-            </HorizontalStackLayout>
-        </Frame>
-        <Frame 
-            BorderColor="Black"
-            Padding="5">
-
-            <HorizontalStackLayout Spacing="15">
-                <BoxView 
-                   Color="Blue"
-                    WidthRequest="40"
-                   />
-                <Label
-                    Text="Blue" 
-                    FontSize="18"/>
-            </HorizontalStackLayout>
         </Frame>
     </VerticalStackLayout>
 </ContentPage>
