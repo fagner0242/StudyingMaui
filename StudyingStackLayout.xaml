@@ -38,23 +38,35 @@
 
         <Frame Padding="15">
             <Image
-                HorizontalOptions="Start"
+                HorizontalOptions="Center"
                 Source="apple.png"
                 WidthRequest="20" />
         </Frame>
 
         <Frame Padding="15">
             <Image
-                HorizontalOptions="Start"
+                HorizontalOptions="Center"
                 Source="facebook.png"
                 WidthRequest="20" />
         </Frame>
 
         <Frame Padding="15">
             <Image
-                HorizontalOptions="Start"
+                HorizontalOptions="Center"
                 Source="google.png"
                 WidthRequest="20" />
         </Frame>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <Label Text="New to StackLayout?" VerticalTextAlignment="End" />
+
+            <Button
+                BackgroundColor="Transparent"
+                FontAttributes="Bold"
+                Text="Get Started"
+                TextColor="#9aabd5" />
+        </HorizontalStackLayout>
+
     </VerticalStackLayout>
+
 </ContentPage>
