@@ -5,55 +5,56 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="StudyingStackLayout">
 
-    <VerticalStackLayout VerticalOptions="Center" Spacing="12" Margin="25">
+    <VerticalStackLayout
+        Margin="25"
+        Spacing="12"
+        VerticalOptions="Center">
 
         <Label
-            Text="Log In"
+            Margin="0,25"
+            FontAttributes="Bold"
             FontSize="Large"
-            Margin="0, 25"
-            FontAttributes="Bold"/>
+            Text="Log In" />
 
-        <Label
-            Text="Email"/>
+        <Label Text="Email" />
 
         <Frame Padding="12">
-            <Label
-                Text="Your email address"
-                TextColor="#adb3b7"/>
+            <Label Text="Your email address" TextColor="#adb3b7" />
         </Frame>
 
-        <Button
-            BackgroundColor="#98b1ea"
-            Text="Continue with email"/>
+        <Button BackgroundColor="#98b1ea" Text="Continue with email" />
 
-        <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 25" Spacing="20">
-            <Entry
-                WidthRequest="140"
-                HeightRequest="19"/>
+        <HorizontalStackLayout
+            Margin="0,25"
+            HorizontalOptions="Center"
+            Spacing="20">
+            <Entry HeightRequest="19" WidthRequest="140" />
             <Label
+                FontAttributes="Bold"
                 Text="Or"
-                TextColor="#a2a8af"
-                FontAttributes="Bold"/>
-            <Entry
-                WidthRequest="140"
-                HeightRequest="19"/>
+                TextColor="#a2a8af" />
+            <Entry HeightRequest="19" WidthRequest="140" />
         </HorizontalStackLayout>
 
-        <Frame>
-            <Image
-                />
-        </Frame>
-        
         <Frame Padding="15">
             <Image
                 HorizontalOptions="Start"
-                WidthRequest="20"
-                Source="google.png"
-                />
+                Source="apple.png"
+                WidthRequest="20" />
         </Frame>
-        
-        <Frame>
 
+        <Frame Padding="15">
+            <Image
+                HorizontalOptions="Start"
+                Source="facebook.png"
+                WidthRequest="20" />
+        </Frame>
+
+        <Frame Padding="15">
+            <Image
+                HorizontalOptions="Start"
+                Source="google.png"
+                WidthRequest="20" />
         </Frame>
     </VerticalStackLayout>
 </ContentPage>
