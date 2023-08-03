@@ -3,9 +3,66 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StudyingMaui.StudyingGridLayout"
              Title="StudyingGridLayout">
-    <Grid>
-        <Label 
-            Text="Text 1"
-            BackgroundColor="Yellow"/>
+
+    <Grid RowDefinitions="2*, 2*, 100"
+          ColumnDefinitions="*, 2*,100">
+        <Label
+            Text="1" 
+            FontSize="Large"
+            BackgroundColor="Yellow"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.RowSpan="2"/>
+        <Label
+            Text="2" 
+            FontSize="Large"
+            BackgroundColor="Green"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="0"
+            Grid.Column="1"/>
+        <Label
+            Text="3" 
+            FontSize="Large"
+            BackgroundColor="Cyan"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="0"
+            Grid.Column="2"/>
+        <Label
+            Text="5" 
+            FontSize="Large"
+            BackgroundColor="Black"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"/>
+        <Label
+            Text="7" 
+            FontSize="Large"
+            BackgroundColor="Chocolate"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="2"
+            Grid.Column="0"/>
+        <Label
+            Text="8" 
+            FontSize="Large"
+            BackgroundColor="White"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="2"
+            Grid.Column="1"/>
+        <Label
+            Text="9" 
+            FontSize="Large"
+            BackgroundColor="Violet"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="2"
+            Grid.Column="2"/>
     </Grid>
 </ContentPage>
