@@ -7,7 +7,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new NavigationPage(new StudyingGridLayout());
+		MainPage = new NavigationPage(new StudyingStackLayout());
 	}
 }
  

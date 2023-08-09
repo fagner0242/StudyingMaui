@@ -3,70 +3,173 @@
     x:Class="StudyingMaui.StudyingStackLayout"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="StudyingStackLayout">
+    Title="StudyingStackLayout"
+    NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout
-        Margin="25"
-        Spacing="12"
-        VerticalOptions="Center">
+    <Grid
+        Margin="20,100,20,20"
+        RowDefinitions="70, 350, *"
+        VerticalOptions="Start">
 
         <Label
-            Margin="0,25"
+            Grid.Row="0"
             FontAttributes="Bold"
-            FontSize="Large"
-            Text="Log In" />
+            FontSize="30"
+            Text="Log in" />
 
-        <Label Text="Email" />
+        <Grid Grid.Row="1" RowDefinitions="30, *, *, *, *, *, *">
 
-        <Frame Padding="12">
-            <Label Text="Your email address" TextColor="#adb3b7" />
-        </Frame>
-
-        <Button BackgroundColor="#98b1ea" Text="Continue with email" />
-
-        <HorizontalStackLayout
-            Margin="0,25"
-            HorizontalOptions="Center"
-            Spacing="20">
-            <Entry HeightRequest="19" WidthRequest="140" />
+            <Label Grid.Row="0" Text="Email" />
+            <Frame Grid.Row="1" HeightRequest="40" />
             <Label
+                Grid.Row="1"
+                Padding="20,0,0,0"
                 FontAttributes="Bold"
-                Text="Or"
-                TextColor="#a2a8af" />
-            <Entry HeightRequest="19" WidthRequest="140" />
-        </HorizontalStackLayout>
+                Text="Your address email"
+                TextColor="#b3bbc3"
+                VerticalTextAlignment="Center" />
+            <!--<Entry
+                Placeholder="Your address email"
 
-        <Frame Padding="15">
+                PlaceholderColor="#b3bbc3"
+                Grid.Row="1"/>-->
+            <Button
+                Grid.Row="2"
+                Margin="0,20,0,0"
+                BackgroundColor="#98b1ea"
+                HeightRequest="40"
+                Text="Continue with email" />
+
+            <Grid
+                Grid.Row="3"
+                Margin="0,30,0,0"
+                RowDefinitions="*">
+
+                <Label
+                    BackgroundColor="#e9ecef"
+                    HeightRequest="1.5"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    WidthRequest="150" />
+
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="11"
+                    HorizontalOptions="Center"
+                    Text="OR"
+                    TextColor="#8d98a5"
+                    VerticalOptions="Center" />
+
+                <Label
+                    BackgroundColor="#e9ecef"
+                    HeightRequest="1.5"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    WidthRequest="150" />
+            </Grid>
+
+            <Frame
+                Grid.Row="4"
+                Margin="0,30,0,0"
+                HeightRequest="40" />
+
             <Image
+                Grid.Row="4"
+                Margin="0,0,170,0"
                 HorizontalOptions="Center"
                 Source="apple.png"
+                VerticalOptions="End"
                 WidthRequest="20" />
-        </Frame>
 
-        <Frame Padding="15">
+            <Label
+                Grid.Row="4"
+                FontAttributes="Bold"
+                FontSize="13.8"
+                HorizontalOptions="Center"
+                Text="Continue With Apple"
+                TextColor="#646d75"
+                VerticalOptions="End" />
+
+            <Frame
+                Grid.Row="5"
+                Margin="0,30,0,0"
+                HeightRequest="40" />
+
             <Image
+                Grid.Row="5"
+                Margin="0,0,190,0"
                 HorizontalOptions="Center"
                 Source="facebook.png"
+                VerticalOptions="End"
                 WidthRequest="20" />
-        </Frame>
 
-        <Frame Padding="15">
+            <Label
+                Grid.Row="5"
+                FontAttributes="Bold"
+                FontSize="13.8"
+                HorizontalOptions="Center"
+                Text="Continue With Facebook"
+                TextColor="#646d75"
+                VerticalOptions="End" />
+
+            <Frame
+                Grid.Row="6"
+                Margin="0,30,0,0"
+                HeightRequest="40" />
+
             <Image
+                Grid.Row="6"
+                Margin="0,0,170,0"
                 HorizontalOptions="Center"
                 Source="google.png"
-                WidthRequest="20" />
-        </Frame>
+                VerticalOptions="End"
+                WidthRequest="18" />
 
-        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-            <Label Text="New to StackLayout?" VerticalTextAlignment="End" />
+            <Label
+                Grid.Row="6"
+                FontAttributes="Bold"
+                FontSize="13.8"
+                HorizontalOptions="Center"
+                Text="Continue With Google"
+                TextColor="#646d75"
+                VerticalOptions="End" />
+        </Grid>
+
+        <Grid
+            Grid.Row="2"
+            Margin="0,205,0,0"
+            ColumnDefinitions="*, *"
+            VerticalOptions="FillAndExpand">
+            <Label
+                HorizontalOptions="End"
+                Text="New to Tetrisly?"
+                VerticalOptions="Center" />
 
             <Button
+                Grid.Column="1"
                 BackgroundColor="Transparent"
                 FontAttributes="Bold"
+                HorizontalOptions="Start"
                 Text="Get Started"
-                TextColor="#9aabd5" />
-        </HorizontalStackLayout>
+                TextColor="#3e6dd7" />
+        </Grid>
+    </Grid>
 
-    </VerticalStackLayout>
+    <!--  Dica  -->
+    <!--<Grid
+        Padding="20"
+        RowDefinitions="*,3*,*"
+        BackgroundColor="Orange">
 
+        <BoxView Grid.Row="0" Color="Green"/>
+        <BoxView Grid.Row="1" Color="Yellow"/>
+        <BoxView Grid.Row="2" Color="Red"/>
+
+        <Grid VerticalOptions="End" HorizontalOptions="Center" Grid.Row="2" ColumnDefinitions="*,*">
+            <Label Text="vjsljvfl" Grid.Column="0"/>
+
+
+        </Grid>
+
+    </Grid>-->
 </ContentPage>
