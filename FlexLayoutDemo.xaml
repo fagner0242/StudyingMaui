@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StudyingMaui.FlexLayoutDemo"
-             Title="FlexLayoutDemo">
-    <FlexLayout Wrap="Wrap">
-        <Label 
+<ContentPage
+    x:Class="StudyingMaui.FlexLayoutDemo"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlexLayoutDemo">
+    <FlexLayout>
+        <Label
             BackgroundColor="Red"
-            Text="Label 1"
-            FontSize="Large"/>
-        <Label 
+            FlexLayout.AlignSelf="Start"
+            FontSize="Large"
+            Text="Label 1" />
+        <Label
             BackgroundColor="Blue"
-            Text="Label 2"
-            FontSize="Large"/>
-        <Label 
+            FlexLayout.AlignSelf="Center"
+            FontSize="Large"
+            Text="Label 2" />
+        <Label
             BackgroundColor="Yellow"
-            Text="Label 3"
-            FontSize="Large"/>
-        <Label 
+            FlexLayout.AlignSelf="End"
+            FontSize="Large"
+            Text="Label 3" />
+        <Label
             BackgroundColor="Orange"
-            Text="Label 4"
-            FontSize="Large"/>
-        <Label 
+            FlexLayout.AlignSelf="Auto"
+            FontSize="Large"
+            Text="Label 4" />
+        <Label
             BackgroundColor="Yellow"
-            Text="Label 3"
-            FontSize="Large"/>
-        <Label 
+            FontSize="Large"
+            Text="Label 3" />
+        <Label
             BackgroundColor="Orange"
-            Text="Label 4"
-            FontSize="Large"/>
+            FontSize="Large"
+            Text="Label 4" />
     </FlexLayout>
 </ContentPage>
