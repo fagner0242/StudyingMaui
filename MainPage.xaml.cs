@@ -1,24 +1,22 @@
-﻿namespace StudyingMaui;
+﻿using Microsoft.Maui.Maps;
+
+namespace StudyingMaui;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+  //  protected override async void OnAppearing()
+  //  {
+		//base.OnAppearing();
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+		//var geolocationRequest = new GeolocationRequest(GeolocationAccuracy.High, TimeSpan.FromSeconds(10));
+		//var response = await Geolocation.GetLocationAsync(geolocationRequest);
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+		//map.MoveToRegion(MapSpan.FromCenterAndRadius(response, Distance.FromMiles(10)));
+  //  }
 }
 
